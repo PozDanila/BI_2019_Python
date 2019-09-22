@@ -8,3 +8,6 @@ install:
 
 script:
   - flake8 --max-line-length=160 ./
+  - flake8 --ignore = E226,E302,E41 ./ 
+  - flake8 --exclude = tests/* ./
+  - flake8 --max-complexity = 10 ./  
