@@ -7,4 +7,4 @@ install:
   - pip install flake8
 
 script:
-  - flake8 --max-line-length=160 ./ --ignore = E226,E302,E41 ./ --exclude = tests/* ./ --max-complexity = 10 ./  
+  - flake8 ./  
